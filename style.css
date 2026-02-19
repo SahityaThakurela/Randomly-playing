@@ -30,7 +30,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer {
+    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer, .container_img {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -173,13 +173,11 @@ body {
     font-family: "Baloo 2", sans-serif;
 }
 
-/* Style strictly for the SVG logo to make it sit nicely with text */
+
 .pracai-logo {
     height: 1.4em;
-    /* Scales relative to the font size */
     width: auto;
     vertical-align: -26px;
-    /* Slight adjustment to align with text baseline */
     display: inline-block;
 }
 
@@ -477,12 +475,8 @@ body {
 .scroll-wrapper {
     width: 100%;
     overflow: hidden;
-    /* Mask the parts that are off-screen */
 }
 
-/* .profiles:hover {
-    animation-play-state: paused;
-} */
 
 @keyframes auto-scroll {
     0% {
