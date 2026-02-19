@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.gap {
+    padding-top: 200px;
+}
+
+body {
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+
+
+
+
+/* container */
+.container ul {
+    text-decoration: none;
+}
+
+.container ul li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 89vw;
+    gap: 20px;
+    padding: 10px 80px 0px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -0.15px;
+    background-color: rgb(0, 0, 0);
+}
+
+.container_navbtns ul {
+    display: flex;
+    gap: 20px;
+}
+
+.container_buttonlogin button {
+    width: 86px;
+    height: 34px;
+    opacity: 1;
+    border-radius: 6px;
+    background: #1FD2FF;
+    border: 0;
+}
+
+
+
+
+/* hero section */
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 80px 160px 80px;
+    gap: 160px;
+
+}
+
+.hero-text {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Baloo 2", sans-serif;
+}
+
+/* Style strictly for the SVG logo to make it sit nicely with text */
+.pracai-logo {
+    height: 1.4em;
+    /* Scales relative to the font size */
+    width: auto;
+    vertical-align: -26px;
+    /* Slight adjustment to align with text baseline */
+    display: inline-block;
+}
+
+
+.text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: #F2F5FCB2;
+    padding: 10px 0px 20px 0px;
+
+}
+
+.btn_green {
+    background: #71DA2B;
+}
+
+.hero_section_buttons button {
+    background: #1FD2FF;
+    width: 233.80999755859375px;
+    height: 40px;
+    opacity: 1;
+    border-radius: 8px;
+    padding: 15px;
+    border: 0;
+    box-shadow: 0px 0.71px 0.71px -0.63px #00000026;
+
+}
+
+
+.hero_section_img img {
+    width: 628px;
+    height: 500px;
+    min-width: 350px;
+    opacity: 1;
+    border-radius: 20px;
+
+}
+
+
+/* Features Section */
+
+.features_sec {
+    padding: 0px 80px 0px 80px;
+}
+
+.features_sec_heading1 {
+    width: 100%;
+    height: 42px;
+    padding-top: 80px;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    background: linear-gradient(to right, #a2d149, #5bbce4);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+
+}
+
+
+.features_sec_heading2 {
+    width: 100%;
+    height: 58px;
+    padding-top: 20px;
+    font-family: 'Baloo 2';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 57.6px;
+    letter-spacing: -2.6px;
+    text-align: center;
+
+
+}
+
+/* 3cards jo hain  */
+.features_sec_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 80px 20px 80px;
+}
+
+.combine-text h2 {
+    width: 600px;
+    height: 48px;
+    color: #71DA2B;
+    font-family: Baloo 2;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -2px;
+
+
+}
+
+
+
+
+/* Courses section */
+.courses_sec {
+    padding: 20px 80px 20px 80px;
+}
+
+.courses_card {
+    margin: 20px 80px 20px 80px;
+    padding: 40px 30px 40px 30px;
+    background-color: #0F1A1F;
+    width: 84.333vw;
+    height: 429px;
+    gap: 80px;
+    border-radius: 12px;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courses_card h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    width: 570;
+    height: 44;
+}
+
+.card_showcase {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+}
+
+.card_showcase img {
+    border-radius: 50%;
+}
+
+.inner_showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.text1 {
+    font-size: 15px;
+
+}
+
+.text2 {
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    position: relative;
+    top: -26px;
+
+}
+
+.btnview_course {
+    width: 28vw;
+    height: 54px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    opacity: 1;
+    border-radius: 12px;
+    background-color: #71DA2B;
+    box-shadow: 0px 4px 12px 0px #00000040;
+
+
+}
+
+.btnview_course2 {
+    background-color: #545C50;
+}
+
+
+
+
+/* about us section */
+
+.grid {
+    position: relative;
+    top: -90px;
+}
+
+
+
+
+
+/* FAQ's Section  */
+
+.questions {
+    margin-top: 100px;
+}
+
+.questions text {
+    font-family: "Inter", sans-serif;
+
+}
+
+.question {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #1FD2FF;
+    border-radius: 12px;
+    height: 64px;
+    margin: 20px 80px 0px 80px;
+
+}
+
+
+.contact_question {
+    width: 89vw;
+    height: 250px;
+    border-radius: 12px;
+    background-color: #0F1A1F;
+    text-align: center;
+    margin: 100px 80px 0px 80px;
+}
+
+.contact_question div {
+    padding-top: 50px;
+}
+
+.contact_question button {
+    width: 190px;
+    height: 46px;
+    background-color: #FF9D00;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+
+
+/* testimonial section  */
+
+.testemonial_sec {
+    width: 100vw;
+}
+
+.left-grid {
+    width: 100vw;
+    height: 555px;
+    top: 30px;
+    position: relative;
+    left: 300px;
+    opacity: 0.3;
+
+
+}
+
+.right-grid {
+    width: 100vw;
+    height: 555px;
+    top: 520px;
+    position: relative;
+    opacity: 0.3;
+
+}
+
+
+.profiles {
+    display: flex;
+    overflow-y: auto;
+    flex-wrap:nowrap;
+    width: max-content;
+    gap: 30px;
+
+    animation: auto-scroll 20s linear infinite;
+}
+
+.profile {
+    width: 309px;
+    height: 390px;
+    gap: 5px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #021f2c;
+    text-align: center;
+    border: 1px solid #6b6b6b;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden; /* Mask the parts that are off-screen */
+}
+/* .profiles:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes auto-scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+.star_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.person {
+    filter: invert(100%);
+}
+.name {
+    font-family: "DM Sans", sans-serif;
+    padding: 40px;
+}
+.reviews {
+    padding-top: 40px;
+}
