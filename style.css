@@ -16,12 +16,20 @@ body {
 
 
 /* container */
-.container ul {
+.container ul li {
     text-decoration: none;
+    list-style: none;
 }
 
 .container ul li {
     list-style: none;
+    cursor: pointer;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+
 }
 
 .container {
@@ -37,6 +45,10 @@ body {
     line-height: 30px;
     letter-spacing: -0.15px;
     background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+
 }
 
 .container_navbtns ul {
@@ -95,20 +107,20 @@ body {
 
 }
 
-.btn_green {
-    background: #71DA2B;
-}
-
-.hero_section_buttons button {
-    background: #1FD2FF;
+.herobtn {
+    background-color: #1FD2FF;
     width: 233.80999755859375px;
     height: 40px;
     opacity: 1;
     border-radius: 8px;
+    margin-right: 20px;
     padding: 15px;
     border: 0;
     box-shadow: 0px 0.71px 0.71px -0.63px #00000026;
+}
 
+.herobtngreencolor {
+    background-color: #71DA2B;
 }
 
 
@@ -149,7 +161,7 @@ body {
     width: 100%;
     height: 58px;
     padding-top: 20px;
-    font-family: 'Baloo 2';
+    font-family: '2';
     font-weight: 600;
     font-size: 40px;
     line-height: 57.6px;
@@ -354,7 +366,7 @@ body {
 .profiles {
     display: flex;
     overflow-y: auto;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     width: max-content;
     gap: 30px;
 
@@ -376,17 +388,20 @@ body {
 
 .scroll-wrapper {
     width: 100%;
-    overflow: hidden; /* Mask the parts that are off-screen */
+    overflow: hidden;
+    /* Mask the parts that are off-screen */
 }
+
 /* .profiles:hover {
     animation-play-state: paused;
 } */
 
 @keyframes auto-scroll {
-    0%{
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(-50%);
     }
 }
@@ -398,16 +413,179 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    
+
 }
 
 .person {
     filter: invert(100%);
 }
+
 .name {
     font-family: "DM Sans", sans-serif;
     padding: 40px;
 }
+
 .reviews {
     padding-top: 40px;
+}
+
+
+
+/* container222 */
+.container2 {
+    padding: 100px 80px 0px 80px;
+}
+
+.background {
+    /* background: linear-gradient(to right, #71DA2B, #1A2F6C00, #1FD2FF); */
+    width: 1280px;
+    height: 449.010009765625px;
+    min-width: 280px;
+    padding: 70.6px 20px 71.61px 20px;
+    gap: 12px;
+    border-radius: 12px;
+
+    background: #0b1115;
+    background: linear-gradient(110deg,
+            rgba(113, 218, 43, 0.35) -30%,
+            /* Pulled slightly off-screen */
+            rgba(26, 47, 108, 0) 42%,
+            /* Fade to transparent earlier */
+            rgba(26, 47, 108, 0) 55%,
+            /* Stay transparent across the center */
+            rgba(31, 210, 255, 0.65) 175%
+            /* Pulled slightly off-screen */
+        );
+    text-align: center;
+
+}
+
+.background h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 56px;
+    color: #A8DADC;
+    padding: 30px 0px;
+
+}
+
+.background img {
+    margin: 40px 0px;
+}
+
+.GetStartbtn {
+    background-color: #71DA2B;
+    width: 234px;
+    height: 50px;
+    opacity: 1;
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 15px;
+    border: 0;
+    box-shadow: 0px 0.71px 0.71px -0.63px #00000026;
+}
+
+
+
+
+
+
+/* footer */
+.footer {
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 100px 80px;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social_handles {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    margin: 100px 80px;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+}
+
+.pages h2 {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0px;
+
+}
+
+.textfooter {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #f2f5fcad;
+    padding-top: 10px;
+
+
+}
+
+.Subscribe {
+    background-color: #0F1A1F;
+    width: 595px;
+    height: 236px;
+    min-width: 280px;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 24px;
+
+}
+
+.subscibe_box {
+    padding: 25px 140px;
+    max-width: 245px;
+}
+
+.email_address {
+    display: flex;
+
+}
+
+.email_address input {
+    width: 274;
+    height: 50;
+    top: 43px;
+    padding: 16px;
+    gap: 10px;
+    border-radius: 6px;
+    border-width: 1.5px;
+    background: #0D0D12;
+    border: 1.5px solid #161829
+}
+
+.footer3 {
+    text-align: center;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+
 }
