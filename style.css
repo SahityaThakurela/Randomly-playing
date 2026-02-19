@@ -1,3 +1,91 @@
+/* make website responsive  */
+
+@media screen and (max-width: 1024px) {
+    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer {
+        padding: 0px 40px 0px 40px;
+    }
+    .hero-text { font-size: 48px; }
+    .combine-text h2 { font-size: 32px; }
+    .background h2 { font-size: 40px; }
+
+    .features_sec_cards {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features_sec_cards:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .courses_card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .card_showcase {
+        justify-content: center;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    .container_navbtns ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .hero_section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 180px; 
+    }
+    .hero-text { font-size: 38px; }
+    
+    .herobtn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .footer2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .pages {
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .Subscribe {
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     padding: 0;
     margin: 0;

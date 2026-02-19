@@ -1,0 +1,550 @@
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Crucial: Prevents padding from expanding element widths */
+}
+
+body {
+    background-color: rgb(11, 11, 11);
+    color: white;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.gap {
+    padding-top: 100px; /* Reduced base gap */
+}
+
+/* =========================================
+   BASE STYLES (Desktop First)
+   ========================================= */
+
+/* container */
+.container ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: -0.15px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.container_navbtns ul {
+    display: flex;
+    gap: 20px;
+}
+
+.container_buttonlogin button {
+    width: 86px;
+    height: 34px;
+    opacity: 1;
+    border-radius: 6px;
+    background: #1FD2FF;
+    border: 0;
+    cursor: pointer;
+}
+
+/* hero section */
+.hero_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 160px 80px 100px 80px;
+    gap: 50px;
+}
+
+.hero-text {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: "Baloo 2", sans-serif;
+}
+
+.pracai-logo {
+    height: 1.4em;
+    width: auto;
+    vertical-align: -26px;
+    display: inline-block;
+}
+
+.text {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.5px;
+    color: #F2F5FCB2;
+    padding: 10px 0px 20px 0px;
+}
+
+.herobtn {
+    background-color: #1FD2FF;
+    width: 200px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 0;
+    box-shadow: 0px 0.71px 0.71px -0.63px #00000026;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.herobtngreencolor {
+    background-color: #71DA2B;
+}
+
+.hero_section_img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Features Section */
+.features_sec {
+    padding: 0px 80px;
+}
+
+.features_sec_heading1 {
+    width: 100%;
+    padding-top: 80px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(to right, #a2d149, #5bbce4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.features_sec_heading2 {
+    width: 100%;
+    padding-top: 20px;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+}
+
+.features_sec_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+
+.features_sec_cards img {
+    max-width: 100%;
+    height: auto;
+}
+
+.combine-text h2 {
+    color: #71DA2B;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -2px;
+}
+
+/* Courses section */
+.Courses_sec {
+    padding: 20px 80px;
+}
+
+.courses_card {
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #0F1A1F;
+    width: 100%;
+    height: auto;
+    gap: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.courses_card_img img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.courses_card h2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.card_showcase {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 20px;
+}
+
+.inner_showcase {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.text1 {
+    font-size: 15px;
+}
+
+.text2 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.btnview_course {
+    width: 200px;
+    height: 54px;
+    border-radius: 12px;
+    background-color: #71DA2B;
+    border: none;
+    box-shadow: 0px 4px 12px 0px #00000040;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnview_course2 {
+    background-color: #545C50;
+    color: white;
+}
+
+/* about us section */
+.about_sec {
+    position: relative;
+}
+
+.grid {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    max-width: 100%;
+    z-index: -1;
+}
+
+/* FAQ's Section */
+.FAQ_sec {
+    padding: 0 80px;
+}
+
+.questions {
+    margin-top: 60px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #1FD2FF;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact_question {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #0F1A1F;
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px 20px;
+}
+
+.contact_question button {
+    width: 190px;
+    height: 46px;
+    background-color: #FF9D00;
+    border-radius: 12px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* testimonial section */
+.testemonial_sec {
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.profiles {
+    display: flex;
+    width: max-content;
+    gap: 30px;
+    animation: auto-scroll 20s linear infinite;
+    padding: 0 80px;
+}
+
+.profile {
+    width: 309px;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #021f2c;
+    text-align: center;
+    border: 1px solid #6b6b6b;
+    flex-shrink: 0;
+}
+
+@keyframes auto-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.star_row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.person {
+    filter: invert(100%);
+    margin: 15px 0;
+}
+
+.name {
+    font-family: "DM Sans", sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* CTA container */
+.container2 {
+    padding: 100px 80px 0px 80px;
+}
+
+.background {
+    width: 100%;
+    padding: 60px 20px;
+    border-radius: 12px;
+    background: #0b1115;
+    background: linear-gradient(110deg, rgba(113, 218, 43, 0.35) -30%, rgba(26, 47, 108, 0) 42%, rgba(26, 47, 108, 0) 55%, rgba(31, 210, 255, 0.65) 175%);
+    text-align: center;
+}
+
+.background h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 56px;
+    color: #A8DADC;
+    padding: 20px 0px;
+}
+
+.GetStartbtn {
+    background-color: #71DA2B;
+    width: 234px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    padding: 100px 80px 40px 80px;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social_handles {
+    display: flex;
+    gap: 20px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 60px 0;
+    flex-wrap: wrap;
+}
+
+.pages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.pages h2 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.textfooter {
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    color: #f2f5fcad;
+    padding-top: 10px;
+    line-height: 1.5;
+}
+
+.Subscribe {
+    background-color: #0F1A1F;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.email_address {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.email_address input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    background: #0D0D12;
+    border: 1.5px solid #161829;
+    color: white;
+}
+
+.email_address img {
+    cursor: pointer;
+}
+
+.footer3 {
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+
+/* =========================================
+   MEDIA QUERIES (Responsiveness)
+   ========================================= */
+
+/* TABLETS & SMALL LAPTOPS (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .hero-text { font-size: 48px; }
+    .combine-text h2 { font-size: 32px; }
+    .background h2 { font-size: 40px; }
+
+    .features_sec_cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Reverses row order on mobile for the middle card so image is always below text */
+    .features_sec_cards:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .courses_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card_showcase {
+        justify-content: center;
+    }
+}
+
+/* MOBILE DEVICES (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+    .container, .hero_section, .features_sec, .Courses_sec, .FAQ_sec, .container2, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Navbar Mobile Fix */
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+    }
+    .container_navbtns ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    /* Hero Section Mobile */
+    .hero_section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 180px; /* Leave room for taller mobile navbar */
+    }
+    .hero-text { font-size: 38px; }
+    
+    .herobtn {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    /* Footer Mobile */
+    .footer2 {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .pages {
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .Subscribe {
+        padding: 20px;
+    }
+}
